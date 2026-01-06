@@ -19,7 +19,7 @@ A custom power board designed to support a portable Pi 5 stereo vision setup.
 - Handle battery input safely with protection
 - Support portable operation (efficiency, thermal, noise)
 
-**Highlights**
+**Features**
 - Power architecture: `Battery/Adapter → DC/DC → 5V rail(s) → Pi 5 + peripherals`
 - Protection: fuse / reverse polarity / TVS (as applicable)
 - Validation: load test, ripple/noise check, thermal observation
@@ -29,10 +29,10 @@ A custom power board designed to support a portable Pi 5 stereo vision setup.
 
 ---
 
-### 2) UI (Primary Contribution)
+### 2) UI 
 A lightweight on-device UI for operating the stereo vision system.
 
-**Core UI features**
+**Features**
 - Live preview window (rectified view / overlay view if available)
 - Start/Stop recording
 - Adjustable runtime parameters (exposure, resolution, FPS, stereo params if exposed)
