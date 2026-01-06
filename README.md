@@ -10,7 +10,7 @@ This repository documents my main contributions to the project:
 
 ## What I Built
 
-![PCB_3D_View](images/Pi5_PowerBoard)
+![PCB_3D_View](images/Pi5_PowerBoard.png)
 ### 1) Power PCB (Primary Contribution)
 A custom power board designed to support a portable Pi 5 stereo vision setup.
 
