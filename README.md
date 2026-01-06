@@ -50,4 +50,4 @@ A lightweight on-device UI for operating the stereo vision system.
 ├─ hardware/
 ├─ ui/
 │  ├─ app/                      # UI code (Qt/QML or other)
-├─ hardware/                    # Screenshots
+├─ images/                    # Screenshots
