@@ -34,7 +34,7 @@ class FrameRecorder:
         cfg.out_dir.mkdir(parents=True, exist_ok=True)
         self._frame_size = frame_size
 
-        # Prefer H264 if the build supports it; fallback to mp4v
+        # fallback to mp4v
         fourcc_candidates = ["avc1", "H264", "mp4v"]
         out_path = cfg.out_dir / "recording.mp4"
 
