@@ -45,7 +45,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Pi5 Stereo Vision UI (PyQt6)")
 
         self.s = UiSettings()
-        self.provider = FrameProvider(self.s, use_webcam=False)  # set True if you want /dev/video0
+        self.provider = FrameProvider(self.s, use_webcam=True)  # True for /dev/video0
         self.recorder = FrameRecorder()
 
         self._frame_idx = 0
@@ -167,7 +167,7 @@ class MainWindow(QMainWindow):
         # Info group
         g_info = QGroupBox("Info")
         info = QVBoxLayout(g_info)
-        info.addWidget(QLabel("Integration tip: replace FrameProvider.get_frame()\nwith pipeline output.\n\nThis UI is designed to stay\nportable + operator-friendly."))
+        info.addWidget(QLabel("replace FrameProvider.get_frame()\nwith pipeline output"))
         v.addWidget(g_info)
 
         v.addStretch(1)
@@ -196,7 +196,7 @@ class MainWindow(QMainWindow):
             out_dir = QFileDialog.getExistingDirectory(self, "Select output folder")
             if not out_dir:
                 return
-            # frame size is based on current preview image label content; safer: use next frame size
+            # frame size is based on current preview image label content
             frame = self.provider.get_frame()
             h, w = frame.shape[:2]
             cfg = RecordConfig(out_dir=Path(out_dir), fps=self.s.record_fps)
