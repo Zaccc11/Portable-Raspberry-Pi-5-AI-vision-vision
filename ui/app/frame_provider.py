@@ -9,15 +9,7 @@ from .settings import UiSettings
 
 class FrameProvider:
     """
-    Replace THIS with your integration to the stereo pipeline.
-
-    Contract:
-      get_frame() -> np.ndarray (BGR image) for preview display.
-
-    You can output:
-      - left only
-      - side-by-side (left|right)
-      - composite (left|right|disparity_color)
+    Collaborate with the stereo pipeline
     """
 
     def __init__(self, settings: UiSettings, use_webcam: bool = False) -> None:
@@ -55,7 +47,7 @@ class FrameProvider:
         cv2.circle(base, (cx, cy), 35, (0, 255, 255), -1)
 
         # text
-        cv2.putText(base, "UI Preview (replace FrameProvider with pipeline output)", (20, 40),
+        cv2.putText(base, "UI Preview", (20, 40),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
 
         # make a "right" view by shifting
