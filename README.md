@@ -31,7 +31,9 @@ A custom power board designed to support a portable Pi 5 stereo vision setup.
 
 ### 2) UI 
 A lightweight on-device UI for operating the stereo vision system.
-![UI_View](images/Pi5_Running.png)
+![PI_UI_View](PI_Running.png)
+
+![PC_UI_View](Computer_UI.png)
 **Features**
 - Live preview window (rectified view / overlay view if available)
 - Start/Stop recording
