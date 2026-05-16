@@ -1,0 +1,55 @@
+{
+  "index": 8,
+  "timestamp_iso": "2026-03-09T18:49:37.151",
+  "pair_key": [
+    437,
+    441
+  ],
+  "dt_ms": 2.855,
+  "post_mode": "WLS",
+  "disp_scale": 0.5,
+  "full_disparity_range": {
+    "min": 32,
+    "num": 192,
+    "max_exclusive": 224
+  },
+  "camera": {
+    "fx_px": 1142.9017637149882,
+    "baseline_m": 0.06000449145891734
+  },
+  "image_shape_hw": [
+    480,
+    640
+  ],
+  "valid_pixels": 180972,
+  "depth_raw_cm_stats": {
+    "min": 30.891550064086914,
+    "max": 7837.62744140625,
+    "mean": 118.64031219482422,
+    "median": 75.49791717529297
+  },
+  "depth_corrected_cm_stats": {
+    "min": 31.27056884765625,
+    "max": 69097.6171875,
+    "mean": 148.43260192871094,
+    "median": 79.6635513305664
+  },
+  "files": {
+    "rect_left": "rect_left/0008.png",
+    "rect_right": "rect_right/0008.png",
+    "disparity": "disparity/0008.png",
+    "depth_raw": "depth_raw/0008.png",
+    "depth_corrected": "depth_corrected/0008.png",
+    "depth_raw_vis": "depth_raw_vis/0008.png",
+    "depth_corrected_vis": "depth_corrected_vis/0008.png"
+  },
+  "save_ok": {
+    "rect_left": true,
+    "rect_right": true,
+    "disparity": true,
+    "depth_raw": true,
+    "depth_corrected": true,
+    "depth_raw_vis": true,
+    "depth_corrected_vis": true
+  }
+}
